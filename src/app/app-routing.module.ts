@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
-
+import { CodigoQRPage } from './codigo-qr/codigo-qr.page'; // Importa la página
 
 
 const routes: Routes = [
@@ -26,9 +26,11 @@ const routes: Routes = [
     loadChildren: () => import('./create-account/create-account.module').then( m => m.CreateAccountPageModule)
   },
   {
-    path: 'codigoqr',
-    loadChildren: () => import('./codigoqr/codigoqr.module').then( m => m.CodigoqrPageModule)
+    path: 'codigo-qr',
+    loadChildren: () => import('./codigo-qr/codigo-qr.module').then( m => m.CodigoQRPageModule)
   },
+  
+  
   
   
   
@@ -41,3 +43,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+
