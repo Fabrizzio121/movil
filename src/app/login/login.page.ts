@@ -22,7 +22,7 @@ export class LoginPage {
 
         if (account) {
           // Credenciales válidas, redirigir a la página principal
-          this.navCtrl.navigateForward('/home');
+          this.navCtrl.navigateForward('/codigo-qr');
         } else {
           // Credenciales inválidas, mostrar un mensaje de error
           console.log('Credenciales inválidas');
